@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("form").onsubmit = () => {
-        // becuase for now I don't have a Internet I use json but you shuld change it to freecurrencyapi.com's API
-        // fetch('https://api.freecurrencyapi.com/v1/latest?apikey=e4HSy2o8cJ2gzT2u4u61kvohmyTJKEAHfdi6Ndeg')
-        fetch("../data/db.json")
+
+        fetch('https://api.freecurrencyapi.com/v1/latest?apikey=e4HSy2o8cJ2gzT2u4u61kvohmyTJKEAHfdi6Ndeg')
         .then((response) => response.json())
         .then(data => {
+
             var currency = document.getElementById('currency').value.toUpperCase();
             var lot = document.getElementById('lot').value;
             var frm = document.querySelector('form');
