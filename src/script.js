@@ -10,13 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
             // var pip : pips_count
-            // var instrument : instrument
             // var lot : lot
             // var deposit_currency = deposit_currency
 
             var instrument = document.getElementById('instrument').value.toUpperCase();
+            instrument = instrument.substring(0,3);
+            console.log(instrument)
 
-            var lot = document.getElementById('lot').value;
+            var lot = document.getElementById('lot').value * 100000
 
             var frm = document.querySelector('form');
 
