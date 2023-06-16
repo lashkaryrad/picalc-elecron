@@ -1,2 +1,3 @@
 # run the app:
-npm run start ..
+cd ..
+npm run start 
