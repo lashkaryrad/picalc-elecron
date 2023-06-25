@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("form").onsubmit = () => {
 
         // fetch data from server
-        fetch('https://api.freecurrencyapi.com/v1/latest?apikey=e4HSy2o8cJ2gzT2u4u61kvohmyTJKEAHfdi6Ndeg')
+        fetch('https://api.freecurrencyapi.com/v1/latest?apikey=')
         // get response with json
         .then((response) => response.json())
         // get response as data
